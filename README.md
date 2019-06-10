@@ -1,5 +1,5 @@
 # microprofile-docker
-Microprofile  with Docker
+Microprofile with Docker generated with [thorntail.io/generator/](https://thorntail.io/generator/)
 
 
 ## Options
@@ -18,7 +18,7 @@ Generating the image
 
 Running the containner
 
-`docker run -it -p 8080:8080 --name test-mp test-mp`
+`docker run -it -p 8080:8080 --name test-mp microprofile-docker:1.0.0-SNAPSHOT`
 
 
 ## Services
@@ -32,7 +32,6 @@ Running the containner
 
 ## Tecnologies in this sample
 * Java 8
-* JUnit 5
 * REST
 * Microprofile
 * Docker

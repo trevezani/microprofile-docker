@@ -1,16 +1,19 @@
 package br.com.trevezani.controller;
 
-import javax.inject.Singleton;
+import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
 
+@ApplicationScoped
 @Path("/versao")
-@Singleton
 public class VersaoController {
 
     @GET
-    public String versao() {
-        return "v1.00";
+    @Produces("text/plain")
+    public Response versao() {
+        return Response.ok("v1.00").build();
     }
 
 }
